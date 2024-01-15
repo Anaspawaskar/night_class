@@ -4,7 +4,7 @@
 # number2 = 5
 # custiom_devision(number1,number2)
 
-def example():
+"""def example():
     try:
         num1 = int(input("enter the number :"))
         num2 = int(input("enter the number :"))
@@ -20,8 +20,34 @@ def example():
   
         
 result  = example()
-print(result)
+print(result)"""
 
+
+#2.Write a Python function that takes a list of numbers as input and calculates the average. Handle the ZeroDivisionError and any other exceptions that may occur.
+# Example usage:
+#numbers_list = [1, 2, 3, 4, 5]
+#calculate_average(numbers_list)
+
+def list_number():
+    try:
+        listin = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+        total = sum(listin)
+        avg = total / len(listin)
+        return avg
+
+
+    except ZeroDivisionError as z_value:
+        print("zero number should not be added in the list to get the average :")
+
+    except ValueError as v_error:
+        print("only numbers should be added in the list ")
+    
+    except Exception as error :
+        print("error something is invalid here ")
+
+example = list_number()
+print(example)
+        
     
 
 
